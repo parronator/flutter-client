@@ -46,11 +46,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/extensions/builder-extension.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="24" column="31" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="24" selection-end-column="31" />
+            <state relative-caret-position="102">
+              <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="47" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/templates/init.ts.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -77,18 +86,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/commands/flutter-cli.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/commands/init.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -109,7 +106,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -179,12 +176,12 @@
         <option value="$PROJECT_DIR$/src/tasks/build-app.ts" />
         <option value="$PROJECT_DIR$/src/templates/model.ts.ejs" />
         <option value="$PROJECT_DIR$/src/commands/generate.ts" />
-        <option value="$PROJECT_DIR$/src/templates/init.ts.ejs" />
         <option value="$PROJECT_DIR$/src/options.ts" />
         <option value="$PROJECT_DIR$/src/commands/init.ts" />
         <option value="$PROJECT_DIR$/src/extensions/executor-extension.ts" />
         <option value="$PROJECT_DIR$/src/tasks/init.ts" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/src/templates/init.ts.ejs" />
       </list>
     </option>
   </component>
@@ -303,12 +300,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571679670555</updated>
-      <workItem from="1571679672298" duration="33334000" />
+      <workItem from="1571679672298" duration="33511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33334000" />
+    <option name="totallyTimeSpent" value="33511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="-149" width="1920" height="1080" extended-state="0" />
@@ -555,13 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/init.ts.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/model.ts.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -634,16 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/extensions/builder-extension.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="24" column="31" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="24" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tasks/build-app.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -668,6 +648,23 @@
             <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/extensions/builder-extension.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/init.ts.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
         </state>
       </provider>
     </entry>
