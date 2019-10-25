@@ -6,10 +6,10 @@ This CLI is made for avoid typing some of the most used commands and configurati
 
 ## Install CLI (WIP)
 ```shell
-$ npm install -g flutter-cli
+$ npm install -g flutter-client
 ```
 
-## Current way to use flutter-cli
+## Current way to use flutter-client
 - Download repository
 - Enter repository folder using terminal and run
 ```shell
@@ -20,7 +20,7 @@ $ npm link
 
 ## Running CLI
 ```shell
-$ flutter-cli
+$ flutter-client
 ```
 
 ## Features
@@ -46,7 +46,7 @@ $ flutter-cli
 * Bundle (.aab)
 
 ## Default configuration for CLI
-By default, flutter-cli comes with this configuration
+By default, flutter-client comes with this configuration
 ```shell
 module.exports = {
     defaults: {
@@ -60,7 +60,7 @@ module.exports = {
 ```
 
 ## Custom configuration for CLI
-You can use flutter-cli to initialise configuration automatically or you can create a flutter-cli.config.js file on root of your project with the following template in order to overwrite configuration:
+You can use flutter-client to initialise configuration automatically or you can create a flutter-client.config.js file on root of your project with the following template in order to overwrite configuration:
 ```shell
 module.exports = {
     defaults: {

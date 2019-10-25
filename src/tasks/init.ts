@@ -11,7 +11,7 @@ export const Init = async (toolbox: GluegunToolboxCustom) => {
 
     await generate({
         template: 'init.ts.ejs',
-        target: `flutter-cli.config.js`,
+        target: `flutter-client.config.js`,
     });
     spinner.succeed();
 

@@ -4,8 +4,8 @@ import { EBuildAndroidOptions, EEnvironmentOptions } from '../options';
 module.exports = async (toolbox: GluegunToolboxCustom) => {
     const {print, system, config: {loadConfig}} = toolbox;
 
-    const newConfig = loadConfig('flutter-cli', process.cwd());
-    const getGlobal = (field) => newConfig.defaults && newConfig.defaults[field] ? newConfig.defaults[field] : toolbox.config.fluttercli[field];
+    const newConfig = loadConfig('flutter-client', process.cwd());
+    const getGlobal = (field) => newConfig.defaults && newConfig.defaults[field] ? newConfig.defaults[field] : toolbox.config.flutterclient[field];
 
     const mainFileStagingPath = getGlobal('mainFileStagingPath');
     const mainFileQAPath = getGlobal('mainFileQAPath');

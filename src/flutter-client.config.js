@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'fluttercli',
+    name: 'flutterclient',
     defaults: {
         mainFileStagingPath: 'lib/main_staging.dart',
         mainFileQAPath: 'lib/main_qa.dart',
