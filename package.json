@@ -2,7 +2,7 @@
   "name": "flutter-cli",
   "version": "0.0.1",
   "description": "flutter-cli CLI",
-  "private": true,
+  "private": false,
   "types": "build/types/types.d.ts",
   "bin": {
     "flutter-cli": "bin/flutter-cli"
