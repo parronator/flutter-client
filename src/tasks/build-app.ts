@@ -26,7 +26,7 @@ export const BuildApp = async (toolbox: GluegunToolboxCustom) => {
             await builder.flutterClean();
             await builder.createApk(environment.optionSelect);
             await builder.renameApk(environment.optionSelect);
-            await builder.openPath(EBuildAndroidOptions.Bundle);
+            await builder.openPath(EBuildAndroidOptions.Apk);
         }
     }
 
