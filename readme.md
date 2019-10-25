@@ -60,7 +60,7 @@ module.exports = {
 ```
 
 ## Custom configuration for CLI
-Create a flutter-cli.config.js file on root of your project with the following template in order to overwrite configuration:
+You can use flutter-cli to initialise configuration automatically or you can create a flutter-cli.config.js file on root of your project with the following template in order to overwrite configuration:
 ```shell
 module.exports = {
     defaults: {

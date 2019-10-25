@@ -5,7 +5,8 @@ export enum EMainOptions {
     TestApp = 'Test app',
     NewProject = 'New project',
     NewApp = 'New app',
-    NewLib = 'New library'
+    NewLib = 'New library',
+    Init = 'Initialise flutter-cli'
 }
 
 export enum EPlatformOptions {

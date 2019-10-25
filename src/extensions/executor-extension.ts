@@ -3,6 +3,7 @@ import { EMainOptions } from '../options';
 import { GluegunToolboxCustom } from '../types';
 import { BuildApp } from '../tasks/build-app';
 import { TestApp } from '../tasks/test-app';
+import { Init } from '../tasks/init';
 
 module.exports = async (toolbox: GluegunToolboxCustom) => {
     const mainActivity = async (response: GluegunAskResponse) => {
@@ -11,6 +12,9 @@ module.exports = async (toolbox: GluegunToolboxCustom) => {
         switch (response.optionSelect) {
             case EMainOptions.BuildApp:
                 await BuildApp(toolbox);
+                break;
+            case EMainOptions.Init:
+                await Init(toolbox);
                 break;
             case EMainOptions.TestApp:
                 await TestApp(toolbox);
