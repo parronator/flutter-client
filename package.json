@@ -1,11 +1,11 @@
 {
-  "name": "flutter-cli",
+  "name": "flutter-client",
   "version": "0.0.1",
-  "description": "flutter-cli CLI",
+  "description": "flutter-client CLI",
   "private": false,
   "types": "build/types/types.d.ts",
   "bin": {
-    "flutter-cli": "bin/flutter-cli"
+    "flutter-client": "bin/flutter-client"
   },
   "scripts": {
     "format": "prettier --write **/*.{js,ts,tsx,json}",
