@@ -6,6 +6,5 @@ module.exports = {
         mainFileProductionPath: 'lib/main.dart',
         bundlePath: 'build/app/outputs/bundle/release/',
         apkPath: 'build/app/outputs/apk/release/',
-
     },
 }

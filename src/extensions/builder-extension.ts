@@ -1,5 +1,5 @@
 import { GluegunToolboxCustom } from '../types';
-import { EEnvironmentOptions } from '../options';
+import { EBuildAndroidOptions, EEnvironmentOptions } from '../options';
 
 module.exports = async (toolbox: GluegunToolboxCustom) => {
     const {print, system, config: {loadConfig}} = toolbox;
@@ -31,8 +31,9 @@ module.exports = async (toolbox: GluegunToolboxCustom) => {
         spinnerRename.succeed();
     };
 
-    const openPath = async (path: String) => {
-        await system.run(`open ${path}`);
+    const openPath = async (type: EBuildAndroidOptions) => {
+        if(type === EBuildAndroidOptions.Apk) await system.run(`open ${apkPath}`);
+        if(type === EBuildAndroidOptions.Bundle) await system.run(`open ${bundlePath}`);
     };
 
     const createApk = async (environment: EEnvironmentOptions) => {

@@ -8,7 +8,7 @@ import {
 
 
 export const BuildApp = async (toolbox: GluegunToolboxCustom) => {
-    const {print, options, builder, configuration} = toolbox;
+    const {print, options, builder} = toolbox;
 
     const platform = await options(platformOptions);
 
@@ -19,14 +19,14 @@ export const BuildApp = async (toolbox: GluegunToolboxCustom) => {
             await builder.flutterClean();
             await builder.createBundle(environment.optionSelect);
             await builder.renameBundle(environment.optionSelect);
-            await builder.openPath(configuration.bundlePath);
+            await builder.openPath(EBuildAndroidOptions.Bundle);
         }
         if (buildType.optionSelect === EBuildAndroidOptions.Apk) {
             const environment = await options(environmentOptions);
             await builder.flutterClean();
             await builder.createApk(environment.optionSelect);
             await builder.renameApk(environment.optionSelect);
-            await builder.openPath(configuration.apkPath);
+            await builder.openPath(EBuildAndroidOptions.Bundle);
         }
     }
 
