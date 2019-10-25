@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96c8d579-c246-4e1e-ac60-20ea1ac5dd82" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cli.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/cli.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/flutter-cli.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/flutter-client.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/extensions/builder-extension.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/extensions/builder-extension.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/flutter-cli.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/flutter-client.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/options.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/options.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks/init.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tasks/init.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/commands/flutter-client.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -103,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+            <state relative-caret-position="34">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -181,7 +173,6 @@
         <option value="$PROJECT_DIR$/src/commands/init.ts" />
         <option value="$PROJECT_DIR$/src/extensions/executor-extension.ts" />
         <option value="$PROJECT_DIR$/src/templates/init.ts.ejs" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/src/tasks/init.ts" />
         <option value="$PROJECT_DIR$/src/flutter-client.config.js" />
@@ -189,6 +180,7 @@
         <option value="$PROJECT_DIR$/src/cli.ts" />
         <option value="$PROJECT_DIR$/src/options.ts" />
         <option value="$PROJECT_DIR$/src/commands/flutter-cli.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -293,15 +285,16 @@
       <option name="presentableId" value="Default" />
       <updated>1571679670555</updated>
       <workItem from="1571679672298" duration="34175000" />
-      <workItem from="1572000838859" duration="522000" />
+      <workItem from="1572000838859" duration="681000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34697000" />
+    <option name="totallyTimeSpent" value="34856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="-149" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21778488" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -507,13 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -576,6 +562,13 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
