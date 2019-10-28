@@ -16,6 +16,7 @@
     "build": "yarn format && yarn lint && yarn clean-build && yarn compile && yarn copy-templates",
     "test": "jest",
     "watch": "jest --watch",
+    "install": "npm run build",
     "snapupdate": "jest --updateSnapshot",
     "coverage": "jest --coverage"
   },
