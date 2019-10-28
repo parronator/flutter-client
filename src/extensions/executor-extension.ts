@@ -11,13 +11,25 @@ module.exports = async (toolbox: GluegunToolboxCustom) => {
 
         switch (response.optionSelect) {
             case EMainOptions.BuildApp:
-                await BuildApp(toolbox);
+                try {
+                    await BuildApp(toolbox);
+                } catch (e) {
+                    console.log('^C')
+                }
                 break;
             case EMainOptions.Init:
-                await Init(toolbox);
+                try {
+                    await Init(toolbox);
+                } catch (e) {
+                    console.log('^C')
+                }
                 break;
             case EMainOptions.TestApp:
-                await TestApp(toolbox);
+                try {
+                    await TestApp(toolbox);
+                } catch (e) {
+                    console.log('^C')
+                }
                 break;
             default:
                 error.notImplemented();

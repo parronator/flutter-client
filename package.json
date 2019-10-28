@@ -1,6 +1,6 @@
 {
   "name": "flutter-client",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "flutter-client CLI",
   "private": false,
   "types": "build/types/types.d.ts",

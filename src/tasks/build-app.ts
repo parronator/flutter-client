@@ -16,6 +16,7 @@ export const BuildApp = async (toolbox: GluegunToolboxCustom) => {
 
     if (platform.platformSelect === EPlatformOptions.Android) {
         if (buildType.buildAndroidSelect === EBuildAndroidOptions.Bundle) {
+
             await builder.flutterClean();
             await builder.createBundle(environment.environmentSelect);
             await builder.renameBundle(environment.environmentSelect);
