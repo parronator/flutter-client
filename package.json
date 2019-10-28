@@ -15,7 +15,6 @@
     "copy-templates": "if [ -e ./src/templates ]; then cp -a ./src/templates ./build/; fi",
     "test": "jest",
     "watch": "jest --watch",
-    "install": "npm run build",
     "snapupdate": "jest --updateSnapshot",
     "coverage": "jest --coverage"
   },
