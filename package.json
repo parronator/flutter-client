@@ -1,6 +1,6 @@
 {
   "name": "flutter-client",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "flutter-client CLI",
   "private": false,
   "types": "build/types/types.d.ts",
@@ -13,7 +13,7 @@
     "clean-build": "rm -rf ./build",
     "compile": "tsc -p .",
     "copy-templates": "if [ -e ./src/templates ]; then cp -a ./src/templates ./build/; fi",
-    "build": "yarn format && yarn lint && yarn clean-build && yarn compile && yarn copy-templates",
+    "build": "npm run format && npm run lint && npm run clean-build && npm run compile && npm run copy-templates",
     "test": "jest",
     "watch": "jest --watch",
     "install": "npm run build",
