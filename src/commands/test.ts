@@ -6,6 +6,6 @@ module.exports = {
     name: 'test',
     alias: ['t'],
     run: async (toolbox: GluegunToolboxCustom) => {
-        TestApp(toolbox);
+        await TestApp(toolbox);
     },
 }
