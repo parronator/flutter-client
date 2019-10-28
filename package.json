@@ -13,6 +13,8 @@
     "clean-build": "rm -rf ./build",
     "compile": "tsc -p .",
     "copy-templates": "if [ -e ./src/templates ]; then cp -a ./src/templates ./build/; fi",
+    "copy-config": "if [ -e ./src/flutter-client.config.js ]; then cp -a ./src/flutter-client.config.js ./build/; fi",
+    "build": "npm run clean-build && npm run compile && npm run copy-templates && npm run copy-config",
     "test": "jest",
     "watch": "jest --watch",
     "snapupdate": "jest --updateSnapshot",
