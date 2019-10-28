@@ -13,7 +13,6 @@
     "clean-build": "rm -rf ./build",
     "compile": "tsc -p .",
     "copy-templates": "if [ -e ./src/templates ]; then cp -a ./src/templates ./build/; fi",
-    "build": "npm run clean-build && npm run compile && npm run copy-templates",
     "test": "jest",
     "watch": "jest --watch",
     "install": "npm run build",
