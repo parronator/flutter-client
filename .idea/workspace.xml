@@ -45,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/src/extensions/options-extension.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -135,8 +135,8 @@
       <find>loadCo</find>
       <find>mainFilePa</find>
       <find>flutter-cli</find>
-      <find>cli</find>
       <find>bundlePath</find>
+      <find>cli</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -283,12 +283,12 @@
       <option name="presentableId" value="Default" />
       <updated>1571679670555</updated>
       <workItem from="1571679672298" duration="34175000" />
-      <workItem from="1572000838859" duration="7354000" />
+      <workItem from="1572000838859" duration="7471000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41529000" />
+    <option name="totallyTimeSpent" value="41646000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="-149" width="1920" height="1080" extended-state="0" />
@@ -540,7 +540,7 @@
     <entry file="file://$PROJECT_DIR$/src/extensions/options-extension.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -564,16 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tasks/build-app.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -581,6 +571,16 @@
             <caret line="18" selection-start-line="18" selection-end-line="18" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tasks/build-app.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
