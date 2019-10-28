@@ -20,6 +20,11 @@ export enum EEnvironmentOptions {
   Production = 'Production'
 }
 
+export enum EModeOptions {
+    Debug = 'Debug',
+    Release = 'Release'
+}
+
 export enum EBuildAndroidOptions {
   Apk = 'Apk',
   Bundle = 'Bundle'
@@ -34,23 +39,32 @@ export const mainOptions: PromptOptions = {
 
 export const platformOptions: PromptOptions = {
   type: 'select',
-  name: 'optionSelect',
+  name: 'platformSelect',
   message: 'Please select platform',
   choices: Object.keys(EPlatformOptions).map(k => EPlatformOptions[k as any])
 }
 
 export const environmentOptions: PromptOptions = {
   type: 'select',
-  name: 'optionSelect',
+  name: 'environmentSelect',
   message: 'Please select environment',
   choices: Object.keys(EEnvironmentOptions).map(
     k => EEnvironmentOptions[k as any]
   )
 }
 
+export const modeOptions: PromptOptions = {
+    type: 'select',
+    name: 'modeSelect',
+    message: 'Please select mode',
+    choices: Object.keys(EModeOptions).map(
+        k => EModeOptions[k as any]
+    )
+}
+
 export const buildAndroidOptions: PromptOptions = {
   type: 'select',
-  name: 'optionSelect',
+  name: 'buildAndroidSelect',
   message: 'Please select build type',
   choices: Object.keys(EBuildAndroidOptions).map(
     k => EBuildAndroidOptions[k as any]

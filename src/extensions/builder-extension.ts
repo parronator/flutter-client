@@ -1,5 +1,5 @@
 import { GluegunToolboxCustom } from '../types';
-import { EBuildAndroidOptions, EEnvironmentOptions } from '../options';
+import { EBuildAndroidOptions, EEnvironmentOptions, EModeOptions } from '../options';
 
 module.exports = async (toolbox: GluegunToolboxCustom) => {
     const {print, system, config: {loadConfig}} = toolbox;
@@ -11,7 +11,8 @@ module.exports = async (toolbox: GluegunToolboxCustom) => {
     const mainFileQAPath = getGlobal('mainFileQAPath');
     const mainFileProductionPath = getGlobal('mainFileProductionPath');
     const bundlePath = getGlobal('bundlePath');
-    const apkPath = getGlobal('apkPath');
+    const apkReleasePath = getGlobal('apkReleasePath');
+    const apkDebugPath = getGlobal('apkDebugPath');
 
     const flutterClean = async () => {
         const spinnerClean = print.spin('Cleaning Flutter');
@@ -27,24 +28,24 @@ module.exports = async (toolbox: GluegunToolboxCustom) => {
 
     const renameBundle = async (environment: EEnvironmentOptions) => {
         const spinnerRename = print.spin('Renaming bundle');
-        await system.run(`mv ${bundlePath}app.aab ${bundlePath}` + buildName(environment) + '.aab');
+        await system.run(`mv ${bundlePath}app.aab ${bundlePath}` + buildName(environment, EModeOptions.Release) + '.aab');
         spinnerRename.succeed();
     };
 
-    const openPath = async (type: EBuildAndroidOptions) => {
-        if(type === EBuildAndroidOptions.Apk) await system.run(`open ${apkPath}`);
+    const openPath = async (type: EBuildAndroidOptions, mode: EModeOptions) => {
+        if(type === EBuildAndroidOptions.Apk) await system.run(`open ${pathMode(mode)}`);
         if(type === EBuildAndroidOptions.Bundle) await system.run(`open ${bundlePath}`);
     };
 
-    const createApk = async (environment: EEnvironmentOptions) => {
+    const createApk = async (environment: EEnvironmentOptions, mode: EModeOptions) => {
         const spinnerBuild = print.spin('Creating apk');
-        await system.run('flutter build apk --release -t ' + mainFile(environment));
+        await system.run('flutter build apk --'+modeSelector(mode)+' -t ' + mainFile(environment));
         spinnerBuild.succeed();
     };
 
-    const renameApk = async (environment: EEnvironmentOptions) => {
+    const renameApk = async (environment: EEnvironmentOptions, mode: EModeOptions) => {
         const spinnerRename = print.spin('Renaming apk');
-        await system.run(`mv ${apkPath}app-release.apk ${apkPath}` + buildName(environment) + '.apk');
+        await system.run(`mv ${pathMode(mode)}app-${modeSelector(mode)}.apk ${pathMode(mode)}` + buildName(environment, mode) + '.apk');
         spinnerRename.succeed();
     };
 
@@ -54,16 +55,34 @@ module.exports = async (toolbox: GluegunToolboxCustom) => {
         spinnerBuild.succeed();
     };
 
-    const buildName = (environment: EEnvironmentOptions) => {
+    const buildName = (environment: EEnvironmentOptions, mode: EModeOptions) => {
         switch (environment) {
             case EEnvironmentOptions.Staging:
-                return 'app-release-staging';
+                return 'app-'+modeSelector(mode)+'-staging';
             case EEnvironmentOptions.QA:
-                return 'app-release-qa';
+                return 'app-'+modeSelector(mode)+'-qa';
             case EEnvironmentOptions.Production:
-                return 'app-release-production';
+                return 'app-'+modeSelector(mode)+'-production';
         }
     };
+
+    const pathMode = (mode: EModeOptions = EModeOptions.Release) => {
+        switch (mode) {
+            case EModeOptions.Debug:
+                return apkDebugPath;
+            case EModeOptions.Release:
+                return apkReleasePath;
+        }
+    }
+
+    const modeSelector = (mode: EModeOptions) => {
+        switch (mode) {
+            case EModeOptions.Debug:
+                return 'debug';
+            case EModeOptions.Release:
+                return 'release';
+        }
+    }
 
     const mainFile = (environment: EEnvironmentOptions) => {
         switch (environment) {
