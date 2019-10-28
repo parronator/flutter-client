@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96c8d579-c246-4e1e-ac60-20ea1ac5dd82" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/cli.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/cli.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/build.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/build.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/init.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/init.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/flutter-client.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/flutter-client.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/options.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/options.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,17 +82,17 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="306">
-                <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+                <caret line="18" selection-start-line="18" selection-end-line="18" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3">
+            <state relative-caret-position="17">
               <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
             </state>
           </provider>
@@ -122,7 +116,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/commands/test.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -189,10 +183,10 @@
         <option value="$PROJECT_DIR$/src/cli.ts" />
         <option value="$PROJECT_DIR$/src/options.ts" />
         <option value="$PROJECT_DIR$/src/commands/flutter-cli.ts" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/commands/build.ts" />
         <option value="$PROJECT_DIR$/src/commands/init.ts" />
         <option value="$PROJECT_DIR$/src/commands/test.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -297,12 +291,12 @@
       <option name="presentableId" value="Default" />
       <updated>1571679670555</updated>
       <workItem from="1571679672298" duration="34175000" />
-      <workItem from="1572000838859" duration="1307000" />
+      <workItem from="1572000838859" duration="1350000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35482000" />
+    <option name="totallyTimeSpent" value="35525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="-149" width="1920" height="1080" extended-state="0" />
@@ -544,16 +538,9 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="306">
-            <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <caret line="18" selection-start-line="18" selection-end-line="18" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -578,6 +565,13 @@
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
